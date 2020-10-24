@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:gravity="center_horizontal">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:gravity="center" android:layout_marginTop="20dip"
+                android:layout_marginBottom="20dip">
+            <TextView
+                    android:text="Profil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView14" android:layout_weight="1"
+                    android:layout_marginLeft="10dip" android:textColor="#000" android:textStyle="normal"/>
+            <TextView
+                    android:text="XCO-19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView12" android:layout_weight="10"
+                    android:textColor="#000" android:textSize="26sp"
+                    android:gravity="center"/>
+            <Button
+                    android:text="back"
+                    android:layout_width="30dip"
+                    android:layout_height="25dip" android:id="@+id/btn_profil_back" android:layout_weight="1"
+                    android:layout_marginRight="10dip" android:textAllCaps="false"
+                    android:padding="0dip" android:textStyle="normal|italic"
+                    android:textColor="#000" android:background="@drawable/bg_btn_transparent"
+                    android:shadowColor="#fff"
+                    style="@android:style/Widget.Button"/>
+        </LinearLayout>
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dip" app:srcCompat="@drawable/logouser" android:id="@+id/imageView2"
+                android:layout_margin="10dip"/>
+        <TextView
+                android:text="Dwi Ilham Maulana"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/txt_profil_name" android:layout_marginTop="10dip"
+                android:layout_marginLeft="10dip" android:layout_marginRight="10dip"
+                android:layout_marginBottom="5dip" android:textAlignment="center" android:textColor="#000"
+                android:textSize="20sp"/>
+        <TextView
+                android:text="dwiilhamm026@gmail.com"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/txt_profil_email" android:textAlignment="center"
+                android:textColor="#000" android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip" android:layout_marginBottom="10dip" android:textStyle="italic"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/txt_nohp_update" android:hint="Nomor Handphone" android:gravity="center"
+                    android:background="@drawable/bg_input_nohp" android:paddingTop="5dip" android:paddingBottom="5dip"
+                    android:textSize="16sp" android:textColor="#000" android:textColorHint="#000"
+                    android:layout_weight="3"/>
+            <Button
+                    android:text="@string/common_google_play_services_update_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp" android:id="@+id/btn_nohp_update" android:layout_weight="1"
+                    android:background="@drawable/bg_btn_logout" android:textColor="#fff"
+                    android:layout_marginLeft="20dip"/>
+        </LinearLayout>
+        <Button
+                android:text="logout"
+                android:layout_width="wrap_content"
+                android:layout_height="30dip" android:id="@+id/btn_profil_logout"
+                android:background="@drawable/bg_btn_logout" android:textColor="#fff"
+                android:layout_marginLeft="10dip" android:layout_marginTop="20dip" android:layout_marginRight="10dip"
+                android:layout_marginBottom="10dip" android:textSize="12sp" android:textAllCaps="false"/>
+    </LinearLayout>
+</LinearLayout>

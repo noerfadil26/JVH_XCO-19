@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:gravity="center" android:layout_marginTop="20dip"
+                android:layout_marginBottom="20dip">
+            <Button
+                    android:text="back"
+                    android:layout_width="40dip"
+                    android:layout_height="20dip" android:id="@+id/btn_berita_back" android:layout_weight="1"
+                    android:background="@drawable/bg_btn_transparent" android:textStyle="italic"
+                    android:textAllCaps="false" android:layout_marginLeft="10dip"
+                    android:textAlignment="center"/>
+            <TextView
+                    android:text="XCO-19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView17" android:layout_weight="10"
+                    android:textColor="#000" android:textAllCaps="true" android:textAlignment="center"
+                    android:textSize="26sp"/>
+            <TextView
+                    android:text="Berita"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/button_on_berita" android:layout_weight="1"
+                    android:textAlignment="center" android:paddingRight="10dip" android:textColor="#000"/>
+        </LinearLayout>
+        <TextView
+                android:text="Provincial COVID-19 Data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView21" android:textColor="#000"
+                android:layout_marginLeft="10dip" android:layout_marginRight="10dip" android:layout_marginTop="10dip"/>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:background="@drawable/bg_status" android:paddingTop="20dp"
+                android:paddingBottom="20dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp" android:layout_marginLeft="10dp">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/txt_berita_province"
+                    android:paddingBottom="5dp"
+            />
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+            >
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView
+                            android:text="Positif"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/textView22" android:textColor="#000"
+                            android:textAlignment="center" android:textAllCaps="true"/>
+                    <TextView
+                            android:text="0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/txt_berita_positif"
+                            android:textAlignment="center" android:textSize="24sp" android:textColor="#ffa36c"/>
+                    <TextView
+                            android:text="Orang"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" android:id="@+id/textView24"
+                            android:textAlignment="center" android:textColor="#000" android:gravity="bottom|center"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView
+                            android:text="Sembuh"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/textView25"
+                            android:textAlignment="center" android:textColor="#000" android:textAllCaps="true"/>
+                    <TextView
+                            android:text="0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/txt_berita_sembuh"
+                            android:textAlignment="center" android:textColor="#799351" android:textSize="24sp"/>
+                    <TextView
+                            android:text="Orang"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" android:id="@+id/textView27"
+                            android:gravity="bottom|center" android:textColor="#000"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView
+                            android:text="Meninggal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/textView28"
+                            android:textAlignment="center" android:textColor="#000"/>
+                    <TextView
+                            android:text="0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/txt_berita_meninggal"
+                            android:textColor="#d54062" android:textAlignment="center" android:textSize="24sp"/>
+                    <TextView
+                            android:text="Orang"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" android:id="@+id/textView30"
+                            android:textAlignment="center" android:textColor="#000"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+                android:text="News"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView31" android:textColor="#000"
+                android:layout_margin="10dip"/>
+        <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip" android:layout_marginBottom="10dip"
+                android:id="@+id/list_berita_berita"/>
+    </LinearLayout>
+</LinearLayout>

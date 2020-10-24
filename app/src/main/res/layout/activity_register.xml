@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".RegisterActivity">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:gravity="center">
+        <TextView
+                android:text="XCO-19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView3" android:paddingLeft="10dp"
+                android:paddingTop="20dp" android:paddingRight="10dp" android:paddingBottom="40dp"
+                android:gravity="center" android:textSize="26sp" android:textColor="#000"/>
+        <TextView
+                android:text="Register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/register_title" android:paddingTop="10dp"
+                android:paddingBottom="10dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp"
+                android:gravity="center" android:textSize="20sp" android:textStyle="italic" android:textColor="#000"
+                android:layout_marginBottom="50dp"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/regist_name" android:hint="Name" android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp" android:layout_marginRight="20dp"
+                android:background="@drawable/bg_input_login"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/regist_email" android:layout_marginLeft="20dp" android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp" android:hint="E-mail" android:background="@drawable/bg_input_login"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/regist_pass" android:hint="Password" android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" android:background="@drawable/bg_input_login"
+                android:layout_marginTop="10dp"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/regist_pass2" android:hint="Password" android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp" android:layout_marginRight="20dp"
+                android:background="@drawable/bg_input_login"/>
+        <CheckBox
+                android:text="Terms &amp; Conditions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/regist_tnc" android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" android:layout_marginTop="10dp"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/register_warn" android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" android:layout_marginBottom="20dp"/>
+        <Button
+                android:text="Register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/btn_regist" android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_btn_register" android:textColor="#fff"/>
+    </LinearLayout>
+</ScrollView>

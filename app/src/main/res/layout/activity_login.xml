@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LoginActivity">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:id="@+id/login_layout" android:gravity="center">
+        <TextView
+                android:text="XCO-19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView2" android:paddingLeft="10dp"
+                android:paddingTop="20dp" android:paddingRight="10dp" android:paddingBottom="40dp"
+                android:gravity="center" android:textSize="26sp" android:textColor="#000"/>
+        <TextView
+                android:text="Log in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/login_title" android:textAllCaps="true"
+                android:gravity="center" android:padding="10dp" android:layout_marginBottom="50dp"
+                android:textSize="20sp" android:textColor="#000" android:textStyle="italic"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/login_email" android:hint="email" android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_input_login"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/login_pass" android:hint="password" android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/bg_input_login"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/login_warn" android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp" android:layout_marginLeft="20dp" android:shadowColor="#D81B60"
+                android:paddingTop="10dp"/>
+        <Button
+                android:text="Login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/btn_login"
+                android:background="@drawable/bg_btn_login" android:textColor="#fff" android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+        <TextView
+                android:text="or"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/login_or" android:gravity="center"
+                android:layout_margin="20dp" android:textSize="16sp"/>
+        <Button
+                android:text="register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/btn_register_onLogin"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_btn_register" android:textColor="#fff"/>
+    </LinearLayout>
+</ScrollView>
